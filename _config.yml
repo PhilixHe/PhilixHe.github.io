@@ -16,7 +16,7 @@ theme: jekyll-text-theme
 
 ## => Site Settings
 ##############################
-text_skin: forest # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
@@ -61,7 +61,7 @@ author:
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : '/' # home layout url, "/" (default)
+  home    : '/index.html' # home layout url, "/" (default)
   archive : "/archive.html" # "/archive.html" (default)
   rss     : "/feed.xml" # "/feed.xml" (default)
 
@@ -95,7 +95,7 @@ chart: # false (default), true
 
 ## => Paginate
 ##############################
-paginate: 1
+paginate: 8
 paginate_path: /page:num # don't change this unless for special need
 
 
@@ -164,21 +164,8 @@ highlighter : rouge
 permalink   : date
 
 exclude:
-  - CHANGELOG.md
-  - HOW_TO_RELEASE.md
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README-*.md
-  - README.md
-  - gulpfile.js
-  - jekyll-text-theme.gemspec
-  - package-lock.json
-  - package.json
-  - /docs
-  - /node_modules
-  - /screenshots
-  - /test
   - /vendor
 
 defaults:
@@ -202,4 +189,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-  - jekyll-github-metadata
