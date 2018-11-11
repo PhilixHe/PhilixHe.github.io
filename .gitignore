@@ -5,5 +5,3 @@
 Gemfile.lock
 package-lock.json
 .rvmrc
-/.bundle/
-/vendor/bundle
